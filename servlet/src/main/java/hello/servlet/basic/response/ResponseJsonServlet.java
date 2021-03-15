@@ -32,7 +32,6 @@ public class ResponseJsonServlet extends HttpServlet {
         //{"username":"kim","age":20}
         String result = objectMapper.writeValueAsString(data);
         response.getWriter().write(result);
-
         /**
          * 참고
          * application/json 은 스펙상 utf-8 형식을 사용하도록 정의되어 있다.
