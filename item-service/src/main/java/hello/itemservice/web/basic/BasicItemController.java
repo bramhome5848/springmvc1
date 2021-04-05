@@ -33,6 +33,11 @@ public class BasicItemController {
         return "basic/item";
     }
 
+    @GetMapping("/add")
+    public String addFrom() {
+        return "basic/addForm";
+    }
+
     /**
      * 테스트용 데이터 추가
      */
